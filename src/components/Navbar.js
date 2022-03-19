@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
-import logo from "../images/logo.svg";
+import logo from "../images/logo.png";
 export default class Navbar extends Component {
   state = {
     isOpen: false
@@ -15,7 +15,7 @@ export default class Navbar extends Component {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">
-              <img src={logo} alt="Beach Resort" />
+              <img src={logo} alt="Beach Resort" height={40} width={120}/>
             </Link>
             <button
               type="button"
@@ -34,6 +34,10 @@ export default class Navbar extends Component {
             <li>
               <Link to="/rooms">Rooms</Link>
             </li>
+            <li>
+              <a target="_blank" href="https://mail.google.com/mail/u/0/?fs=1&to=support@lemonpg.com&su=Contacting%20From%20LemonPG%20website&body=Hey&tf=cm">Contact Us</a>
+            </li>
+           
           </ul>
         </div>
       </nav>

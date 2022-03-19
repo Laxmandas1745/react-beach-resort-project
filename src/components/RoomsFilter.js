@@ -46,7 +46,7 @@ const RoomsFilter = ({ rooms }) => {
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="type">room type</label>
+          <label htmlFor="type">Select City</label>
           <select
             name="type"
             id="type"
